@@ -28,7 +28,7 @@ This module is an enhanced error handler for Python applications. It provides co
 
 1. Import the `logInfo.py` file in your Python project:
 
-   ```python
+```python
    from error_handler import configure_logger
 ```
 
