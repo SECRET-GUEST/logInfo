@@ -34,7 +34,7 @@ This module is an enhanced error handler for Python applications. It provides co
 
 2. Create a logger instance using the configure_logger function:
 
-   ```python
+```python
 email_config = {
     "from_email": "your-email@example.com",
     "to_email": "recipient@example.com",
@@ -45,7 +45,7 @@ email_config = {
 
 logger = configure_logger("LoggerName", "log_file.log", email_config=email_config)
 
-   ```
+```
    3. Use the logger to record messages based on the error level:
       
  ```python
