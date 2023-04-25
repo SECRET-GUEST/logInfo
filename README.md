@@ -14,13 +14,13 @@ Python 3.10
 
 # 📝 Description
 
-This module is an enhanced error handler for Python applications. It provides comprehensive error logging and handling features, including logging to files, console output, and sending critical error notifications via email.
+ndler for Python applications. It provides comprehensive error logging features, including logging to files and console output. The module comes in two versions: one without email notification support and another one with email notification support for critical errors.
 
 # 🔑 Key Features
 
 - 📄 Log messages to files with customizable log file names.
 - 🖥️ Display log messages in the console.
-- 📧 Send email notifications for critical errors.
+- 📧 (Optional) Send email notifications for critical errors (available in the version with email support).
 - 💡 Easily configurable and importable in your Python projects.
 - 📈 Filter log messages based on severity levels.
 
