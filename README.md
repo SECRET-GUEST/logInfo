@@ -57,7 +57,13 @@ logger.critical("Critical level message")
 
 
    ```
-   
-# License
+ 
+## :scroll: License
 
-This program is licensed under the MIT license, which means you can use, modify, and distribute it freely, as long as you mention the original author and include a copy of the license. See the LICENSE.md file for more information.
+This repository is released under the [MIT License](LICENSE). Please see the `LICENSE` file for more information.
+
+## :question: Support & Questions
+
+If you have any questions or need support, please feel free to open an issue or join my twitter.
+
+
