@@ -92,7 +92,7 @@ logger.critical("Critical level message")
          self.logger.error(f"Error: {e}")
   ```
   
-   5 . Use the log info with custom message box script :
+   5 . Use the log info with custom message box system :
    
 As before, you have to import the system in your main page, then you can use it into your subclass by this way : 
 
