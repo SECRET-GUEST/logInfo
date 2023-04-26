@@ -79,7 +79,7 @@ logger.critical("Critical level message")
     
  ```python
  class YourApplication:
-     def __init__(self, logger):
+     def __init__(self, logger):  # Don't forget to add the logger here
          self.logger = logger
  
  
