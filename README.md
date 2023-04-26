@@ -92,6 +92,41 @@ logger.critical("Critical level message")
          self.logger.error(f"Error: {e}")
   ```
   
+   5 . Use the log info with custom message box script :
+   
+As before, you have to import the system in your main page, then you can use it into your subclass by this way : 
+
+
+```python
+ class YourAPPLICATION(QWidget):
+     def __init__(self, logger): #Don't forget to add logger at arguments
+         super().__init__()
+ 
+         # Error handler
+         self.logger = logger
+ 
+         # ...
+
+
+   def some_method(self):
+
+       # Use the logger to show a custom message box from msgbox handler
+
+       self.logger.show_message_box(self, "I HAVE A BULLET FOR YOU", self.sacrifice_all)
+
+        # Or for display error messages
+         try:
+             # Some code that might raise an exception
+             pass
+
+         except Exception as e:
+             # Log the exception
+             self.logger.exception("An error occured : %s", str(e))
+ 
+             # Use the logger to show a custom error message box
+             self.logger.show_error_box(self, f"Une erreur s'est produite : {str(e)}")
+   
+```
 
 A better example would be to watch the code in on of my application using it, you can find one here  :
 
