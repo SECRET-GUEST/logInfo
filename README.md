@@ -14,7 +14,7 @@ Python 3.10
 
 # 📝 Description
 
-ndler for Python applications. It provides comprehensive error logging features, including logging to files and console output. The module comes in two versions: one without email notification support and another one with email notification support for critical errors.
+ndler for Python applications. It provides comprehensive error logging features, including logging to files and console output. The module comes in 3 versions: one without email notification support and another one with email notification support for critical errors, and a last one displaying errors pop ups.
 
 # 🔑 Key Features
 
@@ -23,6 +23,7 @@ ndler for Python applications. It provides comprehensive error logging features,
 - 📧 (Optional) Send email notifications for critical errors (available in the version with email support).
 - 💡 Easily configurable and importable in your Python projects.
 - 📈 Filter log messages based on severity levels.
+- 💬 Pop ups handled by QMessageBox.
 
 # 🛠️ Usage
 
@@ -56,8 +57,39 @@ logger.error("Error level message")
 logger.critical("Critical level message")
 
 
-   ```
+ ```
  
+  4 . Use the msgLog logger to display message in your application : 
+  
+     - In main page :
+
+```python
+ from loginfo import configLogs
+ from autoclicker import Autoclicker
+ 
+ logger = configLogs("MyApplication", "my_application.log", use_qt_dialogs=True)
+ autoclicker = Autoclicker(logger)
+  ```
+ 
+ 
+ 
+    - in sub pages : 
+    
+ ```python
+ class YourApplication:
+     def __init__(self, logger):
+         self.logger = logger
+ 
+ 
+ def launch_script(self):
+     try:
+          
+          ... your code ...
+ 
+     except Exception as e:
+         self.logger.error(f"Error: {e}")
+  ```
+  
 ## :scroll: License
 
 This repository is released under the [MIT License](LICENSE). Please see the `LICENSE` file for more information.
