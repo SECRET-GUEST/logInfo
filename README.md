@@ -84,7 +84,7 @@ logger.critical("Critical level message")
  def launch_script(self):
      try:
           
-          ... your code ...
+         # ... your code ...
  
      except Exception as e:
          self.logger.error(f"Error: {e}")
