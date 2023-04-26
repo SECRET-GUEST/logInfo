@@ -69,8 +69,11 @@ logger.critical("Critical level message")
  from msgLog import configLogs
  from Application import YourApplication
  
- logger = configLogs("MyApplication", "my_application.log", use_qt_dialogs=True)
- autoclicker = YourApplication(logger)
+logger = configLogs("MyApplication", "my_application.log", use_qt_dialogs=True)
+page1 = yourApp(logger)
+page2 = yourApp2(logger)
+page3 = yourApp3(logger)
+        
   ```
  
  
@@ -95,11 +98,27 @@ logger.critical("Critical level message")
    5 . Use the log info with custom message box system :
    
 As before, you have to import the system in your main page, then you can use it into your subclass by this way : 
+   - in main page : 
+   
+```python
+from logInfo import logz
 
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        
+        logger = logz.configLogs("YOUR APPLICATION NAME", "YOUR ERROR FILELOG NAME.log", use_qt_dialogs=True)
+        page1 = yourApp(logger)
+        page2 = yourApp2(logger)
+        page3 = yourApp3(logger)
+        
+```
+
+   - in sub pages : 
 
 ```python
  class YourAPPLICATION(QWidget):
-     def __init__(self, logger): #Don't forget to add logger at arguments
+     def __init__(self, logger): #Don't forget to add logger at arguments on every pages
          super().__init__()
  
          # Error handler
