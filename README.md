@@ -61,7 +61,7 @@ logger.critical("Critical level message")
  
   4 . Use the msgLog logger to display message in your application : 
   
-     - In main page :
+   - In main page :
 
 ```python
  from loginfo import configLogs
@@ -73,7 +73,7 @@ logger.critical("Critical level message")
  
  
  
-    - in sub pages : 
+   - in sub pages : 
     
  ```python
  class YourApplication:
