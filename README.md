@@ -25,15 +25,17 @@ ndler for Python applications. It provides comprehensive error logging features,
 - 📈 Filter log messages based on severity levels.
 - 💬 Pop ups handled by QMessageBox.
 
+
+
 # 🛠️ Usage
 
-1. Import the `logInfo.py` file in your Python project:
+   1. Import the `logInfo.py` file in your Python project:
 
 ```python
    from logInfo import configLogs
 ```
 
-2. Create a logger instance using the configure_logger function:
+   2. Create a logger instance using the configure_logger function:
 
 ```python
 email_config = {
@@ -59,16 +61,16 @@ logger.critical("Critical level message")
 
  ```
  
-  4 . Use the msgLog logger to display message in your application : 
+   4 . Use the msgLog logger to display message in your application : 
   
    - In main page :
 
 ```python
- from loginfo import configLogs
- from autoclicker import Autoclicker
+ from msgLog import configLogs
+ from Application import YourApplication
  
  logger = configLogs("MyApplication", "my_application.log", use_qt_dialogs=True)
- autoclicker = Autoclicker(logger)
+ autoclicker = YourApplication(logger)
   ```
  
  
@@ -90,9 +92,11 @@ logger.critical("Critical level message")
          self.logger.error(f"Error: {e}")
   ```
   
+  
 ## :scroll: License
 
 This repository is released under the [MIT License](LICENSE). Please see the `LICENSE` file for more information.
+
 
 ## :question: Support & Questions
 
