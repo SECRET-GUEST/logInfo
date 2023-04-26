@@ -92,6 +92,11 @@ logger.critical("Critical level message")
          self.logger.error(f"Error: {e}")
   ```
   
+
+A better example would be to watch the code in on of my application using it, you can find one here  :
+
+https://github.com/SECRET-GUEST/autoclicker
+  
   
 ## :scroll: License
 
