@@ -117,7 +117,7 @@ import logging
 from PyQt5.QtWidgets import QMessageBox
 from msgBox import FreeWill
 
-class CustomLogger(logging.Logger):
+class logz(logging.Logger):
     def __init__(self, name, level=logging.NOTSET):
         super().__init__(name, level)
 
