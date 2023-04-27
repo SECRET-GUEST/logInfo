@@ -151,7 +151,18 @@ A better example would be to watch the code in on of my application using it, yo
 
 https://github.com/SECRET-GUEST/autoclicker
   
-  
+
+BTW, if you are searching for more desk tools to opmtimize your productivity you can also check those pages :
+
+- A python tools to remove fast all comments of a page : https://github.com/SECRET-GUEST/silence
+- Make a list of all your fonts, with an image : https://github.com/SECRET-GUEST/font_lister
+- You want to know how many lines you wrote as a developper ? https://github.com/SECRET-GUEST/How-Many-Books-Have-I-Written-As-A-Developer
+- A bunch of themes for python or else : https://github.com/SECRET-GUEST/themes
+
+And there are more in tiny script (without graphical user interface but easy to use ) : https://github.com/SECRET-GUEST/tiny-scripts
+
+
+
 ## :scroll: License
 
 This repository is released under the [MIT License](LICENSE). Please see the `LICENSE` file for more information.
