@@ -143,7 +143,7 @@ class MainWindow(QMainWindow):
              self.logger.exception("An error occured : %s", str(e))
  
              # Use the logger to show a custom error message box
-             self.logger.show_error_box(self, f"Une erreur s'est produite : {str(e)}")
+             self.logger.show_error_box(self, f"An error occured : {str(e)}")
    
 ```
 
