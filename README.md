@@ -164,12 +164,5 @@ If you have any questions or need support, please feel free to open an issue or 
 
 # :gem: Recommendations  
 
-For more desktop tools to elevate your productivity, you might find these repositories useful:
-
-- [Silence](https://github.com/SECRET-GUEST/silence) : A Python tool for rapid removal of all comments from a page.
-- [Font Lister](https://github.com/SECRET-GUEST/font_lister) : A tool to generate a list of all your fonts, accompanied by images.
-- [How Many Books Have I Written As A Developer](https://github.com/SECRET-GUEST/How-Many-Books-Have-I-Written-As-A-Developer) : Quantify your lines of code as a developer.
-- [Themes](https://github.com/SECRET-GUEST/themes) : An assortment of themes for Python and more.
-
 Find more uncomplicated, GUI-free yet easy-to-use scripts here:
 - [Tiny Scripts](https://github.com/SECRET-GUEST/tiny-scripts)
